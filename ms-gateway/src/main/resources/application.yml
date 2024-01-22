@@ -1,0 +1,16 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: ms-auth
+          uri: lb://MS-AUTH
+          predicates:
+            - Path=/api/v1/**
+
+  application:
+    name: MS-GATEWAY
+
+eureka:
+  client:
+    service-url:
+      defaultZone : http://localhost:8761/eureka/
