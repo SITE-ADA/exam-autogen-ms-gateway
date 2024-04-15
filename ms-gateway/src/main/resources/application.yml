@@ -12,6 +12,10 @@ spring:
           predicates:
             - Path=/api/v1/questions/**
 
+        - id: ms-tests
+          uri: lb://MS-TEST
+          predicates:
+            - Path=/api/v1/tests/**
   application:
     name: MS-GATEWAY
 
