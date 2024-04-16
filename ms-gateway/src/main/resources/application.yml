@@ -16,7 +16,7 @@ spring:
           uri: lb://MS-TEST
           predicates:
             - Path=/api/v1/tests/**
-            -
+
         - id: ms-assess
           uri: lb://MS-ASSESS
           predicates:
