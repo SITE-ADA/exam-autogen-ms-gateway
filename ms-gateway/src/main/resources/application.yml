@@ -20,7 +20,7 @@ spring:
         - id: ms-assess
           uri: lb://MS-ASSESS
           predicates:
-            - Path=/api/v1/assess/**
+            - Path=/api/v1/assessments/**
   application:
     name: MS-GATEWAY
 
